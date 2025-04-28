@@ -186,11 +186,9 @@ learning_ignore: # Ignore classes
 # splits que o rogerio falou
 split:
   train:
-    # - 0
-    # - 2
-    # - 8
+    - 0
     # - 5
-    - 100
+    # - 100
     # - 9
     # - 7
     # - 4

@@ -4,7 +4,7 @@ this is just a basic sanity check, not a really legit test suite.
 TODO maybe download data here instead of having it in repo
 """
 
-import pytest
+import visualizer
 import numpy as np
 import os
 import shutil
@@ -38,21 +38,21 @@ DATA ascii
 """
 
 
-@pytest.fixture
+@visualizer.fixture
 def pcd_fname():
     import pypcd
     return os.path.join(pypcd.__path__[0], 'test_data',
                         'partial_cup_model.pcd')
 
 
-@pytest.fixture
+@visualizer.fixture
 def ascii_pcd_fname():
     import pypcd
     return os.path.join(pypcd.__path__[0], 'test_data',
                         'ascii.pcd')
 
 
-@pytest.fixture
+@visualizer.fixture
 def bin_pcd_fname():
     import pypcd
     return os.path.join(pypcd.__path__[0], 'test_data',
